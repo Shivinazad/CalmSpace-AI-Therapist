@@ -146,6 +146,9 @@
             <div class="form-group">
                 <button type="submit">Login</button>
             </div>
+            <p style="text-align: center; margin-top: 20px; color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.5);">
+                New to our website? <a href="register.html" style="color: white; text-decoration: underline;">Register here</a>
+            </p>
         </form>
         </div>
     </div>
@@ -165,6 +168,8 @@
             const username = document.getElementById("username").value;
             const password = document.getElementById("password").value;
 
+            // NOTE: This is for demo purposes only
+            // In production, you should use server-side authentication
             const storedUsername = localStorage.getItem("username");
             const storedPassword = localStorage.getItem("password");
 
